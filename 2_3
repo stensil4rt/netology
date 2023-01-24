@@ -1,0 +1,33 @@
+#!/bin/bash
+a=$1
+avgfile () {
+    if [[ ! -d $a ]]; then
+        echo "Error: directory $1 does not exist"
+        exit 1
+    else 
+        mktemp1=$(mktemp)
+        op1=$(ls -al $1 | grep ^- > $mktemp1) #without subdirectories and symbolic links
+        amount=$(wc -l $mktemp1 | awk '{print $1}') 
+        size=$(du -bsSP $a | awk '{print $1}') #size in bytes
+    fi
+    avginbyt=$(($size/$amount)) #average size in bytes
+    if [[ $avginbyt -le 1024 ]]; then
+        echo "The average file size in directory $a, excluding subdirectories and symbolic links, is $avginbyt-$(($avginbyt+1)) Bytes"
+    else
+        if [[ $avginbyt -le 1048576 ]]; then
+            avginkbyt=$(($avginbyt/1024)) #average size in kilobytes
+            echo "The average file size in directory $a, excluding subdirectories and symbolic links, is $avginkbyt-$(($avginkbyt+1)) Kilobytes"
+        else
+            if [[ $avginbyt -le 1073741824 ]]; then
+                avginmbyt=$(($avginbyt/1048576)) #average size in megabytes
+                echo "The average file size in directory $a, excluding subdirectories and symbolic links, is $avginmbyt-$(($avginmbyt+1)) Megabytes"
+            else
+                if [[ $avginbyt -le 1099511627776 ]]; then
+                    avgingbyt=$(($avginbyt/1073741824)) #average size in gigabytes
+                    echo "The average file size in directory $a, excluding subdirectories and symbolic links, is $avgingbyt-$(($avgingbyt+1)) Gigabytes"
+                fi
+            fi
+        fi
+    fi
+}
+avgfile $a
