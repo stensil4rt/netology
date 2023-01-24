@@ -6,11 +6,11 @@ select operation in A+B A-B A/B A*B; do
         echo "You have chosen A+B"
     echo "Choose the first number (A)"
     read a
-    if (($a+$a))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+    if [[ $a =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
         echo "A=$a"
         echo "Choose the second number (B)"
         read b
-        if (($b+$b))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+        if [[ $b =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
             echo "B=$b"
             echo "$a+$b=$(awk -v a=$a -v b=$b 'BEGIN{printf("%.3f\n", a+b)}')"
             exit
@@ -27,11 +27,11 @@ select operation in A+B A-B A/B A*B; do
         echo "You have chosen A-B"
     echo "Choose the first number (A)"
     read a
-    if (($a+$a))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+    if [[ $a =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
         echo "A=$a"
         echo "Choose the second number (B)"
         read b
-        if (($b+$b))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+        if [[ $b =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
             echo "B=$b"
             echo "$a-$b=$(awk -v a=$a -v b=$b 'BEGIN{printf("%.3f\n", a-b)}')"
             exit
@@ -48,11 +48,11 @@ select operation in A+B A-B A/B A*B; do
         echo "You have chosen A/B"
     echo "Choose the first number (A)"
     read a
-    if (($a+$a))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+    if [[ $a =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
         echo "A=$a"
         echo "Choose the second number (B)"
         read b
-        if (($b+$b))&&[[ $b -ne 0 ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+        if [[ $b =~ [^a-zA-Z] ]]&&[[ $b -ne 0 ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
             echo "B=$b"
             echo "$a/$b=$(awk -v a=$a -v b=$b 'BEGIN{printf("%.3f\n", a/b)}')"
             exit
@@ -69,11 +69,11 @@ select operation in A+B A-B A/B A*B; do
         echo "You have chosen A*B"
     echo "Choose the first number (A)"
     read a
-    if (($a+$a))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+    if [[ $a =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
         echo "A=$a"
         echo "Choose the second number (B)"
         read b
-        if (($b+$b))&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
+        if [[ $b =~ [^a-zA-Z] ]]&&[[ $a != *+* ]]&&[[ $a != *-* ]]&&[[ $a != */* ]]&&[[ $a != *\** ]]; then
             echo "B=$b"
             echo "$a*$b=$(awk -v a=$a -v b=$b 'BEGIN{printf("%.3f\n", a*b)}')"
             exit
