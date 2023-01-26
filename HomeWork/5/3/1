@@ -1,1 +1,11 @@
+loginov@gentoo ~/netology/bash/scripts3 $ cat ipv4.conf 
+192.168.0.1
+127.0.0.1
+84.345.23.11
+88.3A.56.76
+224.12.76
+loginov@gentoo ~/netology/bash/scripts3 $ cat ipv4.conf | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+192.168.0.1
+127.0.0.1
+84.345.23.11
 
