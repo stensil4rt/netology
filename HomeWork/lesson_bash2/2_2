@@ -1,8 +1,0 @@
-#!/bin/bash
-while true; do
-    date=$(date)
-    lavg=$(cat /proc/loadavg)
-    echo $date
-    echo $lavg
-    sleep 5
-done
