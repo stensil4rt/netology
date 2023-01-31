@@ -1,0 +1,28 @@
+#!/bin/bash
+#shapka tabl
+echo timestamp "  "loadavg1 loadavg5 loadavg15 memfree memtotal diskfree disktotal > logs.txt
+while true; do
+    #timestamp in seconds since startup
+    timestamp=$(date +%s)
+
+    #loadavg
+    ldavg1=$(cat /proc/loadavg | awk '{ print $1}')
+    ldavg5=$(cat /proc/loadavg | awk '{ print $2}')
+    ldavg15=$(cat /proc/loadavg | awk '{ print $3}')
+
+    #memfree
+    memfree=$(free --mega | grep Mem | awk '{ print $4 }')
+
+    #memtotal
+    memtotal=$(free --mega | grep Mem | awk '{ print $2 }')
+
+    #diskfree
+    diskfree=$(df -HT | grep /dev/vda1 | awk '{print $5}')
+
+    #disktotal
+    disktotal=$(df -HT | grep /dev/vda1 | awk '{print $3}')
+   
+ #results in tabl
+    echo $timestamp "  " $ldavg1 "  " $ldavg5 "      "$ldavg15 "    "$memfree "    "$memtotal ">> logs.txt
+sleep 5
+done;
