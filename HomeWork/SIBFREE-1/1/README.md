@@ -28,9 +28,13 @@ FIRE-4512 - Empty iptables ruleset
 - Service Info: OS: Linux; Device: WAP; CPE: cpe:/o:linux:linux_kernel, cpe:/h:asus:rt-ac1200
 - 4 
 22/tcp    open  ssh     Dropbear sshd 2020.81 (protocol 2.0)
+
 53/tcp    open  domain  dnsmasq 2.85-50ccf9c5852729a68a0359025cd3bda080acfc39
+
 80/tcp    open  http    Asus RT-AC1200 WAP http config
+
 28723/tcp open  upnp    MiniUPnP 2.1.20191006 (UPnP 1.1)
+
 - ssh, http («WEB-морда») – можно было бы перевести на сертификат (https:443), но внктри сети этого не надо, DNS, функция UPnP
 6.
  Все версии актуальны, все включено что нужно.
@@ -51,4 +55,5 @@ DNS запросы,
 Идет рукопожатие,
 <img src="https://user-images.githubusercontent.com/62753044/224277988-aabad661-7d5a-4f9e-837f-f568cdb1e41e.png" width="385px" align="center">
 и т.д.
+
 8. Выводы: Информация ходит та что и должна, «левых» подключений нет.
