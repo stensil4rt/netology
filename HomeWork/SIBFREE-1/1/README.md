@@ -26,7 +26,9 @@ FIRE-4512 - Empty iptables ruleset
 5.
 - Asus RT-AC1200
 - Service Info: OS: Linux; Device: WAP; CPE: cpe:/o:linux:linux_kernel, cpe:/h:asus:rt-ac1200
+
 - 4 
+
 22/tcp    open  ssh     Dropbear sshd 2020.81 (protocol 2.0)
 
 53/tcp    open  domain  dnsmasq 2.85-50ccf9c5852729a68a0359025cd3bda080acfc39
