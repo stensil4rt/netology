@@ -3,15 +3,15 @@
 ParrotOS
 <img src="https://user-images.githubusercontent.com/62753044/224276548-684fa5de-ef0d-4b20-8b34-9daf0f330d47.png" width="385px" align="center">
 4.
-![image](https://user-images.githubusercontent.com/62753044/224276629-3e7750b5-79ea-440a-8ebd-8388b62653d6.png)
+<img src="https://user-images.githubusercontent.com/62753044/224276629-3e7750b5-79ea-440a-8ebd-8388b62653d6.png" width="385px" align="center">
 5.
-![image](https://user-images.githubusercontent.com/62753044/224276661-48bbd31a-c740-40d4-aaf4-b4d3e5e62c09.png)
+<img src="https://user-images.githubusercontent.com/62753044/224276661-48bbd31a-c740-40d4-aaf4-b4d3e5e62c09.png" width="385px" align="center">
 PKGS-7392 - Vulnerable packages
-![image](https://user-images.githubusercontent.com/62753044/224276696-1b3899a5-6f9b-434a-b1bb-9ca0c64db757.png)
+<img src="(https://user-images.githubusercontent.com/62753044/224276696-1b3899a5-6f9b-434a-b1bb-9ca0c64db757.png" width="385px" align="center">
 NETW-2705 - Properly functioning name servers
-![image](https://user-images.githubusercontent.com/62753044/224276726-929819fc-216f-49b7-b232-5c54ea01b22a.png)
+<img src="https://user-images.githubusercontent.com/62753044/224276726-929819fc-216f-49b7-b232-5c54ea01b22a.png" width="385px" align="center">
 FIRE-4512 - Empty iptables ruleset
-![image](https://user-images.githubusercontent.com/62753044/224276760-7e5ff804-56ba-44f4-83f3-ab47bc4ef7d9.png)
+<img src="https://user-images.githubusercontent.com/62753044/224276760-7e5ff804-56ba-44f4-83f3-ab47bc4ef7d9.png" width="385px" align="center">
 6. Выводы: В целом ОС защищена. При первом запуске необходимо было провести подновление всей системы (пакетов), также настроить DNS и iptables.
 
 <p align="center"> **Задание 2.** </p>
