@@ -1,7 +1,7 @@
 <p align="center"> **Задание 1.** </p>
 1.	
 ParrotOS
-![alt](https://user-images.githubusercontent.com/62753044/224276548-684fa5de-ef0d-4b20-8b34-9daf0f330d47.png)
+![ParrotOS](https://user-images.githubusercontent.com/62753044/224276548-684fa5de-ef0d-4b20-8b34-9daf0f330d47.png "ParrotOS")
 4.
 ![image](https://user-images.githubusercontent.com/62753044/224276629-3e7750b5-79ea-440a-8ebd-8388b62653d6.png)
 5.
