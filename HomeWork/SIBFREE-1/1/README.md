@@ -7,7 +7,7 @@ ParrotOS
 5.
 <img src="https://user-images.githubusercontent.com/62753044/224276661-48bbd31a-c740-40d4-aaf4-b4d3e5e62c09.png" width="385px" align="center">
 PKGS-7392 - Vulnerable packages
-<img src="(https://user-images.githubusercontent.com/62753044/224276696-1b3899a5-6f9b-434a-b1bb-9ca0c64db757.png" width="385px" align="center">
+<img src="https://user-images.githubusercontent.com/62753044/224276696-1b3899a5-6f9b-434a-b1bb-9ca0c64db757.png" width="385px" align="center">
 NETW-2705 - Properly functioning name servers
 <img src="https://user-images.githubusercontent.com/62753044/224276726-929819fc-216f-49b7-b232-5c54ea01b22a.png" width="385px" align="center">
 FIRE-4512 - Empty iptables ruleset
