@@ -1,21 +1,20 @@
-#!/bin/bash
+fu () {
+dir=$1
+count=0
+per=0
 
-avgfile () {
-	if [ ! -d $1 ]; then
-		echo "The $1 directory does not exist"
-	else
-        sum_file_size=0;
-        sum_count_file=0;
-		for file in $(ls $1); do
-            test -f $1/$file
-			if [[ $? -eq '0' ]] ; then
-				file_size=$(stat -c "%s" $1/$file)
-                ((sum_count_file+=1))
-				((sum_file_size+=file_size))
-			fi
-		done
-		echo $(($sum_file_size/$sum_count_file))
-	
-	fi;
+if ! [ -d "$dir" ]; then
+  echo "Directory $dir DOES NOT exists."
+else
+
+ for file in $dir/*.*; do
+   if [ -f $file ]; then
+     per=$(stat -c '%s' "$file")
+     ((count++))
+     let sum=$sum+$per
+   fi
+ done
+echo "Srednii razmer $(($sum/$count))"
+fi
 }
-avgfile /home/parrot/Downloads/task/
+fu /home/parrot/Downloads/task
