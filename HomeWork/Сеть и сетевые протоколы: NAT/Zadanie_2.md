@@ -10,6 +10,7 @@
 ![image](https://user-images.githubusercontent.com/62753044/225565590-bcc57bd8-79fc-4552-8961-8579767d3f53.png)
 ![image](https://user-images.githubusercontent.com/62753044/225565699-090f6ea5-ea88-4565-8b37-f4bec8733b51.png)
 И сами настройки:
+
 ФИЛИАЛ (FILIAL:)
 ![image](https://user-images.githubusercontent.com/62753044/225565808-ee3fe88c-117c-48a8-998a-68395b785e81.png)
 ЯДРО (CORE:)
