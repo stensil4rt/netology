@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+echo "Enter IP add"
+read IP
+echo "Enter Port"
+read PORT
+
+if (nc -zvw3 $IP $PORT > /dev/null 2>&1)
+    then
+        echo "Host avalible"
+        echo "Host $IP:$PORT is avalible" >> /var/log/syslog
+    else
+        echo "Host not found"
+        echo "Host $IP:$PORT is not avalible" >> /var/log/syslog
+fi
