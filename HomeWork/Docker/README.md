@@ -1,3 +1,5 @@
+Взято от сюда: https://losst.pro/ustanovka-docker-v-debian-11
+
 1. Установка Debian в VB
 ![image](https://user-images.githubusercontent.com/62753044/236879570-90e8fe06-b82a-4091-89df-27abef3f886c.png)
 
@@ -13,6 +15,7 @@ nano /etc/sudoers
 
 4.
 sudo apt update
+
 ![image](https://user-images.githubusercontent.com/62753044/236884778-14bda435-0733-47a5-81ac-4a397f7acaaa.png)
 
 5.
