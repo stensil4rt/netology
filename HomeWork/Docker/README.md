@@ -1,20 +1,29 @@
 1. Установка Debian в VB
 ![image](https://user-images.githubusercontent.com/62753044/236879570-90e8fe06-b82a-4091-89df-27abef3f886c.png)
-2.
-sudo apt update
+
+2. Добавление USER в root
+
 ![image](https://user-images.githubusercontent.com/62753044/236883894-6bcc3f11-c538-4795-9a2a-fa2d8afda5bd.png)
+
 3.
-sudo apt -y install ca-certificates curl gnupg lsb-release
+
 ![image](https://user-images.githubusercontent.com/62753044/236883917-5da00bf7-1d00-499e-a936-dc6bcabf8971.png)
+
 4.
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo apt update
+
 ![image](https://user-images.githubusercontent.com/62753044/236884778-14bda435-0733-47a5-81ac-4a397f7acaaa.png)
+
 5.
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt -y install ca-certificates curl gnupg lsb-release
 ![image](https://user-images.githubusercontent.com/62753044/236884916-459f49fc-9e95-47fe-bee7-a53fc3927dd7.png)
+
 6.
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ![image](https://user-images.githubusercontent.com/62753044/236885009-e5b0b507-c415-43f5-9ce4-cda22ffda2a9.png)
+
 7.
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ![image](https://user-images.githubusercontent.com/62753044/236885084-0c4ff272-9ac6-4d86-a5d9-5c86bbd954e4.png)
 8.
 ![image](https://user-images.githubusercontent.com/62753044/236885222-e716cc90-7e8f-4cd9-b7ba-93da5a849739.png)
