@@ -2,16 +2,17 @@
 ![image](https://user-images.githubusercontent.com/62753044/236879570-90e8fe06-b82a-4091-89df-27abef3f886c.png)
 
 2. Добавление USER в root
-
+Переходим в root
+su
 ![image](https://user-images.githubusercontent.com/62753044/236883894-6bcc3f11-c538-4795-9a2a-fa2d8afda5bd.png)
 
 3.
-
+nano /etc/sudoers
+Добавляем пользователя
 ![image](https://user-images.githubusercontent.com/62753044/236883917-5da00bf7-1d00-499e-a936-dc6bcabf8971.png)
 
 4.
 sudo apt update
-
 ![image](https://user-images.githubusercontent.com/62753044/236884778-14bda435-0733-47a5-81ac-4a397f7acaaa.png)
 
 5.
@@ -25,7 +26,9 @@ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o 
 7.
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ![image](https://user-images.githubusercontent.com/62753044/236885084-0c4ff272-9ac6-4d86-a5d9-5c86bbd954e4.png)
+
 8.
+sudo apt update
 ![image](https://user-images.githubusercontent.com/62753044/236885222-e716cc90-7e8f-4cd9-b7ba-93da5a849739.png)
 9.
 ![image](https://user-images.githubusercontent.com/62753044/236885448-68ad8fef-12f9-4d83-a068-51741f6c5efd.png)
