@@ -29,27 +29,39 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 
 8.
 sudo apt update
+
 ![image](https://user-images.githubusercontent.com/62753044/236885222-e716cc90-7e8f-4cd9-b7ba-93da5a849739.png)
+
 9.
+sudo apt -y install docker-ce docker-ce-cli containerd.io
 ![image](https://user-images.githubusercontent.com/62753044/236885448-68ad8fef-12f9-4d83-a068-51741f6c5efd.png)
+
 10.
 sudo systemctl start docker
+
 sudo systemctl status docker
+
 Проверка:
 ![image](https://user-images.githubusercontent.com/62753044/236885570-b4e805d0-a3e3-4813-afb7-93aa38cf95ce.png)
 
 11.
 sudo groupadd docker
+
 sudo usermod -aG docker $USER
+
 ![image](https://user-images.githubusercontent.com/62753044/236886506-7439a6bc-8e59-4e30-92da-92bdb2073a6e.png)
+
 12.
 После добавления пользователя необходимо перелогиниться в системе.
+
 ![image](https://user-images.githubusercontent.com/62753044/236886651-159c7f5a-fff5-4ea7-bc2b-cfc0a9e80914.png)
+
 13.
 Запуск образа hello-world.
+
 docker run hello-world
+
 ![image](https://user-images.githubusercontent.com/62753044/236886881-bf846a1c-d5b5-4f50-a071-17f54f6f4198.png)
 
-14.
 
 
