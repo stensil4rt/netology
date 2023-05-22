@@ -13,7 +13,8 @@
 ![image](https://github.com/stensil4rt/netology/assets/62753044/430314bd-bc79-4dee-9633-f353cb2e7985)
 
 Создайте скрин вывода команды free -h -t
-
+![image](https://github.com/stensil4rt/netology/assets/62753044/bab201f1-0470-4d7c-bc49-837c3ddd17e8)
+Стал на 1Гб больше
 
 Создайте скрин вывода команды swapon -s
 
