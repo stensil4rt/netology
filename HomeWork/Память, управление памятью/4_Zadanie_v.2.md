@@ -4,6 +4,7 @@
 ![image](https://github.com/stensil4rt/netology/assets/62753044/c99ec6b1-fe45-4a2b-ae4c-6399c1a48395)
 
 Создайте swap-файл размером 1Гб
+
 ![image](https://github.com/stensil4rt/netology/assets/62753044/6e31aabc-4418-4731-a785-7d7cd6b87846)
 
 ![image](https://github.com/stensil4rt/netology/assets/62753044/31bd700e-bc3e-4b4e-89e6-2f03ee206d38)
