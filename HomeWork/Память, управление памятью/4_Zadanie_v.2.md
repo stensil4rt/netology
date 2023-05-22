@@ -14,9 +14,12 @@
 
 Создайте скрин вывода команды free -h -t
 ![image](https://github.com/stensil4rt/netology/assets/62753044/bab201f1-0470-4d7c-bc49-837c3ddd17e8)
+
 Стал на 1Гб больше
 
 Создайте скрин вывода команды swapon -s
 
+![image](https://github.com/stensil4rt/netology/assets/62753044/cfb5da35-e6a9-45b4-8651-f221ed77934d)
 
 Измените процент свободной оперативной памяти, при котором начинает использоваться раздел подкачки до 30%. Сделайте скрин внесенного изменения.
+![image](https://github.com/stensil4rt/netology/assets/62753044/f0d01ffd-3ce4-4cd5-b37c-3f1146d18532)
