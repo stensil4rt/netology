@@ -1,4 +1,5 @@
 Задание 3:
+
 Сам скрипт тут:
 ["Циклы и функции" - 3 Задание](https://github.com/stensil4rt/netology/blob/main/HomeWork/Циклы%20и%20функции/Zadanie_3)
 
