@@ -9,7 +9,7 @@
 
 ![image](https://github.com/stensil4rt/netology/assets/62753044/76a6ee15-0403-4ce0-bfb8-7514b8834533)
 
-Если есть расхождения то рекомендую использовать updatedb
+Если есть расхождения то рекомендую использовать `updatedb`
 
 ``` sudo updatedb ```
 
