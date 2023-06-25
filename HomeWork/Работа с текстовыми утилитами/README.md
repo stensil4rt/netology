@@ -11,7 +11,7 @@
 
 Если есть расхождения то рекомендую использовать updatedb
 
-sudo updatedb
+``` sudo updatedb ```
 
 ![image](https://github.com/stensil4rt/netology/assets/62753044/ed82a513-c685-4ec1-8b43-0dfd16ce3221)
 
