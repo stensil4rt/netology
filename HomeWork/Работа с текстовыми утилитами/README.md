@@ -2,9 +2,15 @@
 
 Желательно использовать sudo, так как в директории /etc на некоторые файлы нужны права
 
+ sudo find /etc -regex "^.*\.conf$" > find_file | wc -l  
+ sudo locate --regex "^/etc/.*\.conf$" > locate_file | wc -l
+
+
 ![image](https://github.com/stensil4rt/netology/assets/62753044/76a6ee15-0403-4ce0-bfb8-7514b8834533)
 
 Если есть расхождения то рекомендую использовать updatedb
+
+sudo updatedb
 
 ![image](https://github.com/stensil4rt/netology/assets/62753044/ed82a513-c685-4ec1-8b43-0dfd16ce3221)
 
