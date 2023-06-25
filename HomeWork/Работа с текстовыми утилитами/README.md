@@ -3,6 +3,7 @@
 Желательно использовать sudo, так как в директории /etc на некоторые файлы нужны права
 
 ``` sudo find /etc -regex "^.*\.conf$" > find_file | wc -l  ```
+
 ``` sudo locate --regex "^/etc/.*\.conf$" > locate_file | wc -l ```
 
 
